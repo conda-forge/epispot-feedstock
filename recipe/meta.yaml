@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/epispot/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 317c3d9ccdd012e173942e8953bebff2171b1d4ab100ff9ccc54cec648e7c197
+  sha256: c2919cab6582d5880ff180c80e5373f00daa2054a9b6074988ee9550805065f3
 
 build:
   noarch: python
