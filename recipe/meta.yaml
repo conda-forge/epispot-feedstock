@@ -1,5 +1,5 @@
 {% set name = "epispot" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/epispot/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: c2919cab6582d5880ff180c80e5373f00daa2054a9b6074988ee9550805065f3
+  sha256: b1116e860dd52aedffd900bf958952eef2182331b9ec7fc1288e5fffdfb3c7e2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'A tool for modeling infectious diseases.'
+  summary: A tool for modeling infectious diseases.
 
 extra:
   recipe-maintainers:
