@@ -1,13 +1,13 @@
 {% set name = "epispot" %}
-{% set version = "2.0.3" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/epispot/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: b1116e860dd52aedffd900bf958952eef2182331b9ec7fc1288e5fffdfb3c7e2
+  url: https://github.com/epispot/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: 246b463063db1205a1d418230bc9c0fd743c7b795b6b32ede9cb22377a35adcd
 
 build:
   noarch: python
